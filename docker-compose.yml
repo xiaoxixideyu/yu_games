@@ -10,7 +10,7 @@ services:
       MYSQL_ROOT_PASSWORD: production_password
       MYSQL_DATABASE: game_db
     volumes:
-      - mysql_data:/var/lib/mysql
+      - ./data/mysql:/var/lib/mysql
     ports:
       - "3306:3306"
     networks:
@@ -70,5 +70,5 @@ networks:
     driver: bridge
 
 volumes:
-  mysql_data:
+  # mysql_data:
   frontend_build: 
