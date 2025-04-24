@@ -1,0 +1,15 @@
+# 生产环境配置
+
+server:
+  port: 8080
+
+database:
+  host: db
+  port: 3306
+  user: root
+  password: production_password
+  dbname: game_db
+
+jwt:
+  secret: production-secret-key
+  expire_time: 24  # 小时 
